@@ -68,7 +68,7 @@ const OnBoarding = ({navigation}) => {
               Welcome to
             </Text>
             <Text allowFontScaling={false} style={texts.primaryExtraLargeBold}>
-              Readpedia
+              DansMultiPro
             </Text>
           </View>
         </View>
@@ -78,10 +78,10 @@ const OnBoarding = ({navigation}) => {
             <ICWritingPrimary width={display.wp(50)} height={display.wp(50)} />
             <Gap hp={25} />
             <Text allowFontScaling={false} style={styles.title}>
-              You can write or read every books
+              You can search jobs and company
             </Text>
             <Text allowFontScaling={false} style={texts.primaryExtraLargeBold}>
-              Readpedia
+              DansMultiPro
             </Text>
           </View>
         </View>
@@ -91,10 +91,10 @@ const OnBoarding = ({navigation}) => {
             <ICSearchPrimary width={display.wp(50)} height={display.wp(50)} />
             <Gap hp={25} />
             <Text allowFontScaling={false} style={styles.title}>
-              You can search every books in
+              You can apply to every jobs open
             </Text>
             <Text allowFontScaling={false} style={texts.primaryExtraLargeBold}>
-              Readpedia
+              DansMultiPro
             </Text>
           </View>
         </View>
