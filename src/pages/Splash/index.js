@@ -28,7 +28,7 @@ const Splash = ({navigation}) => {
       <ICBooksPrimary width={display.wp(20)} height={display.wp(20)} />
       <Gap hp={5} />
       <Text allowFontScaling={false} style={texts.primaryExtraLargeBold}>
-        Readpedia
+        DansMultiPro
       </Text>
     </View>
   );

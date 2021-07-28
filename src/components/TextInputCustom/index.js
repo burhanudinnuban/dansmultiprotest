@@ -20,6 +20,7 @@ const TextInputCustom = ({
   editable,
   onPressIconRight,
   onPressIconLeft,
+  onEndEditing,
 }) => {
   return (
     <View
@@ -37,6 +38,7 @@ const TextInputCustom = ({
       {editable === false || onPress ? (
         <TouchableOpacity onPress={onPress && onPress} style={pages.flex}>
           <TextInput
+            onEndEditing={onEndEditing}
             editable={false}
             onPressIn={onPressIn}
             onPressOut={onPressOut}

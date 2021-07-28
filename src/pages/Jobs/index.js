@@ -58,8 +58,6 @@ const Jobs = ({navigation}) => {
     setjobss(filteredData);
   }
 
-  console.log(location);
-
   return (
     <View style={pages.flexWhite}>
       <BarView
@@ -119,9 +117,9 @@ const Jobs = ({navigation}) => {
               />
               <Gap hp={display.hp(1)} />
               <TextInputCustom
-                value={e => setlocation(e)}
+                value={location}
                 numberOfLines={1}
-                // onChangeText={e => setlocation(e)}
+                onChangeText={e => setlocation(e)}
                 placeholder={'type location'}
                 onPressIconRight={() => setlocation('')}
               />
