@@ -1,0 +1,100 @@
+import {StyleSheet} from 'react-native';
+import {colors, display} from '../../../constants';
+
+const pages = StyleSheet.create({
+  flex: {flex: 1},
+  flexWhite: {flex: 1, backgroundColor: colors.white},
+  flexStartRow: {justifyContent: 'center', alignItems: 'flex-start'},
+  flexCenterRow: {justifyContent: 'center', alignItems: 'center'},
+  flexEndRow: {justifyContent: 'center', alignItems: 'flex-end'},
+  barView: {
+    height: display.wp(12),
+    width: display.wp(100),
+    backgroundColor: colors.secondary,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    paddingHorizontal: display.wp(2),
+  },
+  absolute: {position: 'absolute'},
+  transparant: {backgroundColor: 'rgba(70, 70, 70, 0.8)'},
+  centerAbsolute: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  TopLeftAbsolute: {
+    position: 'absolute',
+    top: 10,
+    left: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  TopRightAbsolute: {
+    position: 'absolute',
+    top: 1,
+    right: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  row: {flexDirection: 'row'},
+  padding: (padding, paddingHorizontal, paddingVertical) => ({
+    padding: padding,
+    paddingHorizontal: paddingHorizontal,
+    paddingVertical: paddingVertical,
+  }),
+  padding10: {padding: 10},
+  padding15: {padding: 15},
+  paddingHorizontal15: {paddingHorizontal: 15},
+  roundedBg: (
+    borderColor,
+    padding,
+    margin,
+    borderRadius,
+    backgroundColor,
+    width,
+    height,
+  ) => ({
+    borderRadius: borderRadius ? borderRadius : 0,
+    padding: padding && padding,
+    margin: margin && margin,
+    borderColor: borderColor && borderColor,
+    borderWidth: borderColor && 1,
+    backgroundColor: backgroundColor ? backgroundColor : colors.white,
+    width: width && width,
+    height: height && height,
+  }),
+  padding5: {paddingHorizontal: 10, paddingVertical: 5},
+  paddingHorizontal10: {paddingHorizontal: 10},
+  rowCenter: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  rowCenterBetween: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  flex_end: {justifyContent: 'flex-end', alignItems: 'center'},
+  flex_end_column: {
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end',
+    paddingHorizontal: display.wp(2),
+  },
+  center: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  hpwp: (hp, wp) => ({
+    width: wp ? wp : null,
+    height: hp ? hp : null,
+  }),
+});
+
+export default pages;
